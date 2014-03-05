@@ -21,6 +21,8 @@ Installation
 Usage
 -----
 
+    require 'inherit'
+
     module Inheritable
       module Constants
         Foo = "Nice constant!"

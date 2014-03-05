@@ -8,6 +8,6 @@ end
 
 module Inherit
 
-  # The version of the tabledata gem.
+  # The version of the inherit gem.
   Version = Gem::Version.new("1.0.0")
 end

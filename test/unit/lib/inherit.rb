@@ -20,8 +20,6 @@ module Inheritable
   end
 end
 
-
-
 suite "Module#inherit" do
   test "callback" do
     test_class = Class.new do

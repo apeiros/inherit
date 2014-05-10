@@ -78,9 +78,11 @@ suite "Object#inherit" do
       def was_extended
         @inherited = true
       end
+
       def did_inherit
         @inherited
       end
+
       self
     end
 
@@ -93,6 +95,7 @@ suite "Object#inherit" do
     test_object = Object.new.instance_eval do
       def was_extended
       end
+
       self
     end
 
@@ -105,6 +108,7 @@ suite "Object#inherit" do
     test_object = Object.new.instance_eval do
       def was_extended
       end
+
       self
     end
 

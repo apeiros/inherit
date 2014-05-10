@@ -49,7 +49,6 @@ require "inherit/version"
 #       p(a_string.rad)                  # => "Rad instance method!"
 #     end
 module Inherit
-
   refine Module do
 
     # Add constants, class methods and instance methods to a module/class.

@@ -14,7 +14,7 @@ require "inherit/version"
 #
 #     module MyProject
 #       using Inherit
-#     
+#
 #       module Inheritable
 #         inheritable_constants do
 #           Foo = "Nice constant!"
@@ -36,7 +36,7 @@ require "inherit/version"
 #           puts "#{self} extended #{object}"
 #         end
 #       end
-#     
+#
 #       class Example
 #         inherit Inheritable # -> "Inheritable got inherited by Example"
 #       end

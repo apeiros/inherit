@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
       README.markdown
     ]
 
-  if File.directory?("bin") then
+  if File.directory?("bin")
     s.executables = Dir.chdir("bin") { Dir.glob("**/*").select { |f| File.executable?(f) } }
   end
 

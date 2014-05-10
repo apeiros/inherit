@@ -3,7 +3,7 @@
 require "inherit/version"
 
 # The `inherit` gem lets you avoid the anti-pattern of
-# `def self.included(base); base.extend …; end`, without getting lost in
+# `def self.included(base); base.extend; ...; end`, without getting lost in
 # subclassing.
 #
 # @see Module#inherit

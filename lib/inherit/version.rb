@@ -1,9 +1,9 @@
 # encoding: utf-8
 
 begin
-  require 'rubygems/version' # newer rubygems use this
+  require "rubygems/version" # newer rubygems use this
 rescue LoadError
-  require 'gem/version' # older rubygems use this
+  require "gem/version" # older rubygems use this
 end
 
 module Inherit

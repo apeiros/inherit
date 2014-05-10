@@ -1,9 +1,9 @@
 # encoding: utf-8
 
-require 'stringio'
-require 'minitest/assertions'
-require 'minitest/test'
-require 'inherit'
+require "stringio"
+require "minitest/assertions"
+require "minitest/test"
+require "inherit"
 
 module TestSuite
   attr_accessor :name

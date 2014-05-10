@@ -23,7 +23,7 @@ end
 
 
 suite "Module#inherit" do
-  test 'callback' do
+  test "callback" do
     test_class = Class.new do
       @inherited = false
       def self.inherited_me
@@ -39,7 +39,7 @@ suite "Module#inherit" do
     assert test_class.did_inherit
   end
 
-  test 'constants' do
+  test "constants" do
     test_class = Class.new do
       def self.inherited_me
       end
@@ -50,7 +50,7 @@ suite "Module#inherit" do
     assert test_class.const_defined?(:Foo)
   end
 
-  test 'class methods' do
+  test "class methods" do
     test_class = Class.new do
       def self.inherited_me
       end
@@ -61,7 +61,7 @@ suite "Module#inherit" do
     assert test_class.respond_to?(:funky)
   end
 
-  test 'instance methods' do
+  test "instance methods" do
     test_class = Class.new do
       def self.inherited_me
       end
@@ -74,7 +74,7 @@ suite "Module#inherit" do
 end
 
 suite "Object#inherit" do
-  test 'callback' do
+  test "callback" do
     test_object = Object.new.instance_eval do
       @inherited = false
       def was_extended
@@ -91,7 +91,7 @@ suite "Object#inherit" do
     assert test_object.did_inherit
   end
 
-  test 'constants' do
+  test "constants" do
     test_object = Object.new.instance_eval do
       def was_extended
       end
@@ -103,7 +103,7 @@ suite "Object#inherit" do
     assert test_object.singleton_class.const_defined?(:Foo)
   end
 
-  test 'instance methods' do
+  test "instance methods" do
     test_object = Object.new.instance_eval do
       def was_extended
       end
